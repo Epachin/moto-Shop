@@ -1,0 +1,314 @@
+body {
+    font-family: 'Arial', sans-serif; /* Задает шрифт Arial для всего сайта */
+    background-color: #111111; /* Темный фон для страницы */
+    color: #b8b6b6; /* Основной цвет текста на странице - светло-серый */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333333; /* Темно-серый фон для шапки сайта */
+    padding: 10px 0;
+    color: #ffffff; /* Белый цвет текста в шапке */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .contact-info {
+    display: flex;
+    gap: 20px; /* Расстояние между контактными элементами */
+    font-size: 14px;
+    color: #141414; /* Белый цвет текста в контактной информации */
+}
+
+header .contact-info a {
+    color: #1b1b1b; /* Светло-серый цвет ссылок в контактной информации */
+    text-decoration: none;
+}
+
+header .contact-info a:hover {
+    color: #d9d9d9; /* Светло-серый цвет ссылки при наведении */
+    text-decoration: underline;
+}
+
+nav {
+    display: flex;
+    gap: 20px; /* Пробел между пунктами навигации */
+}
+
+nav a {
+    color: #ffffff; /* Белый цвет текста ссылок навигации */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 15px; /* Внутренние отступы для удобства клика */
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #e5000062; /* Полупрозрачный красный фон при наведении */
+    border-radius: 5px; /* Скругление углов при наведении */
+}
+
+.moto-image {
+    position: absolute;
+    width: 280px;
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.moto-image-container {
+    position: relative;
+}
+
+.moto-image:hover {
+    transform: scale(1.1); /* Увеличение изображения при наведении */
+}
+
+/* Стили для каждого изображения с мотоциклом и их позиционирование */
+#moto-image-1 {
+    background-image: url('moto1.jpg');
+    top: 200px; 
+    left: 150px;
+}
+
+#moto-image-2 {
+    background-image: url('moto2.jpg');
+    top: 200px; 
+    left: 450px;
+}
+
+#moto-image-3 {
+    background-image: url('moto3.jpg');
+    top: 200px; 
+    left: 750px;
+}
+
+#moto-image-4 {
+    background-image: url('moto4.jpg');
+    top: 200px; 
+    left: 1050px;
+}
+
+#moto-image-5 {
+    background-image: url('moto5.jpg');
+    top: 443px; 
+    left: 150px;
+}
+
+.moto-description {
+    flex-grow: 29; /* Дает описанию мотоциклов больше пространства */
+}
+
+main {
+    padding: 30px; /* Отступ вокруг основного содержимого */
+    text-align: center;
+}
+
+.product {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    background-color: #111111; /* Темный фон блока продукта */
+    color: #eeecec; /* Светло-серый цвет текста продукта */
+    border-radius: 10px;
+    box-shadow: 0 40px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.product-image {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 8px; /* Скругление углов изображения продукта */
+}
+
+.product-details {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.product-price {
+    text-align: right;
+    margin-left: auto;
+}
+
+.product-name {
+    color: #b8b6b6; /* Цвет текста для названия продукта */
+    text-align: center;
+}
+
+.buy-button {
+    display: block;
+    margin: 100px auto;
+    padding: 10px 90px;
+    background-color: #e5000062; /* Полупрозрачный красный цвет кнопки */
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    width: 200px;
+    bottom: 10px;
+}
+
+.buy-button:hover {
+    background-color: #8b3e2f; /* Бордовый цвет кнопки при наведении */
+}
+
+.contact-info {
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #ffffff; /* Цвет текста для контактной информации */
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    margin: 0 auto;
+    background-color: #ffffff; /* Темный фон формы */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    border: 1px solid #b8b6b6; /* Светло-серая граница */
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #e5000062; /* Полупрозрачный красный цвет кнопки */
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #8b3e2f; /* Бордовый цвет кнопки при наведении */
+}
+
+.logo {
+    width: 170px;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 680px;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 15px;
+}
+
+.moto-image a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    background-color: #333333; /* Темно-серый фон для футера */
+    color: #b8b6b6; /* Светло-серый цвет текста в футере */
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+#map {
+    width: 800px;
+    height: 600px;
+    margin: 20px auto;
+}
+
+.login-container, .reg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #111111; /* Темный фон */
+}
+
+.login-form, .reg-form {
+    background-color: #e4dede; /* Темный фон формы */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+.login-form .logo, .reg-form .logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.login-form h2, .reg-form h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.login-form input, .reg-form input,
+.login-form button, .reg-form button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.login-form button, .reg-form button {
+    background-color: #8b3e2f; /* Оранжевый цвет кнопки */
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover, .reg-form button:hover {
+    background-color: #8b3e2f; /* Бордовый цвет кнопки при наведении */
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    left: 20px;
+    object-fit: cover;
+    border-radius: 5px; /* Скругление углов изображений */
+    transition: opacity 0.5s;
+}
+
+.slider {
+    position: relative;
+    max-width: 500px;
+    left: 20px;
+    margin: 0 auto;
+    overflow
+}
